@@ -1,0 +1,127 @@
+        *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        }
+        html{
+            font-size: 100%;
+        }
+        .container{
+            background-color: rgb(14, 11, 11);
+            color: wheat;
+            width: 100vw;
+            height: 100vh;
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+            align-items:center;
+            gap: 20px;
+            letter-spacing: 1px;
+            position: relative;
+
+            & .winnerAlert{
+                width: 270px;
+                height: 150px;
+                padding: 10px 20px;
+                border-radius: 20px;
+                position: absolute;
+                left: 50%;
+                top: 34%;
+                transform: translate(-50%);
+                z-index: 12;
+                background:linear-gradient(rgb(181, 119, 3),wheat, green);
+                box-shadow: 0px 0px 10px rgb(109, 107, 102);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                display: none;
+                
+                & h4{
+                    color: black;
+                    text-align: center;
+                    line-height: 20px;
+
+                }
+                & #okBtn{
+                    padding: 10px 15px;
+                    border-radius: 25px;
+                    border: none;
+                    background-color: transparent;
+                    box-shadow: 0px 0px 5px rgb(37, 30, 30);
+                    cursor: pointer;
+                    transition: all 0.2s linear;
+                    &:hover{
+                        border-radius: 0px 9px 0px 9px;
+                        box-shadow: 0px 0px 10px black;
+
+                    }
+
+                }
+            }
+
+            & h1{
+                font-size: 2.3rem;
+                /* font-family:; */
+
+            }
+            & .sub-container{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                width: 270px;
+                gap: 20px;
+                aspect-ratio: 1;
+                padding: 10px;
+
+                & button{
+                    background-color: rgb(4, 3, 3);
+                    color: wheat;
+                    border: none;
+                    cursor: pointer;
+                    border-radius: 16px;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    /* box-shadow: 0px 0px 1px rgb(28, 23, 23); */
+                    &:hover{
+                       box-shadow: 0px 0px 10px rgb(183, 170, 145);  
+                    }
+                }
+            }
+
+            & .players{
+                width: 240px;
+                display:flex;
+                /* padding: 10px; */
+                justify-content:space-between;
+                align-items:center;
+
+                & button{
+                    padding: 10px 20px;
+                    border-radius: 12px;
+                    border: none;
+                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                    font-size: 1.1rem;
+                    letter-spacing: 1px;
+                    background-color: rgb(108, 89, 3);
+                    /* &:hover{
+                    box-shadow: 0px 0px 10px rgb(186, 188, 186);
+                    cursor: pointer;
+                } */
+                }
+            }
+
+            & .reset i{
+                padding: 10px;
+                background-color:rgb(101, 66, 1);
+                border-radius: 50%;
+                font-size: 1.3rem;
+                &:hover{
+                    box-shadow: 0px 0px 5px rgb(138, 138, 138);
+                    cursor: pointer;
+                    /* background-color: green; */
+                }
+            }
+        }
