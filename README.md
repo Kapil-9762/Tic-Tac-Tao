@@ -13,5 +13,4 @@ Play and enjoy the classic 3x3 board game!
 3. The first to align 3 symbols (row, column, or diagonal) wins.
 4. If the grid is full and no one wins → it's a Draw!
 ## Author
-👤 Your Name  
-- GitHub:
+👤 Your Name : Kapil Prajapati
